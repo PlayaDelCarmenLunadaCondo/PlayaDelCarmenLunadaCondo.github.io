@@ -1,0 +1,187 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: Arial;
+}
+
+#titleBar {
+  text-align: center;
+}
+
+.titleText {
+  font-family: Garamond;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+#websiteContent {
+  height: 100%;
+}
+/* 
+#tabcontents {
+  border-bottom: 1px solid black;
+  width: 150%;
+  height: 150%;
+} */
+
+#tabs {
+  border-bottom: 1px solid black;
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+#tabs > ul{
+  margin: 0;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+#tabs li {
+  padding-top: 5px;
+  padding-bottom: 3px;
+  text-align: center;
+  background-color:white;
+  display: inline-block;
+  padding: 0 20px
+}
+
+#tabs li:hover {
+  cursor: pointer;
+  background-color:#ddd;
+}
+#main-image {
+  width: 100%;
+}
+.hidden {
+  display: none
+}
+
+.tabContent {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#modalbackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal {
+  position: fixed;
+  background-color: white;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.5vw 2.5vw;
+}
+
+/* Style the images inside the grid */
+.row img {
+  opacity: 1; 
+  cursor: pointer; 
+}
+
+.row img:hover {
+  opacity: 0.5;
+}
+
+/* Clear floats after the columns */
+.row {
+line-height: 0;
+column-count:4;
+column-gap: 5px;
+margin: 0 5px;
+}
+
+.row img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+#modalImage {
+  position: relative;
+  max-width: 80vw ;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+.info {
+  overflow-y: scroll;
+  background-image: url('images/Backgrounds/Aesthetic.jpeg');
+  background-repeat: repeat;
+}
+ /* background: linear-gradient(179deg, rgba(234,228,216,1) 35%, rgba(155,205,194,1) 61%, rgba(92,183,168,1) 72%, rgba(39,142,123,1)
+  img
+  
+}*/
+
+.main-text {
+  width: 60%;
+  float: left;
+  display: block;
+}
+
+.main-image {
+  width: 40%;
+  float: left;
+  display: block;
+}
+
+.main-image:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .home p {
+    font-size: 15px !important;
+  }
+}
