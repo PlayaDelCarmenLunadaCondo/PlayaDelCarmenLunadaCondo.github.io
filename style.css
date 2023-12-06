@@ -165,9 +165,10 @@ margin: 0 5px;
 }*/
 
 .main-text {
-  width: 60%;
+  width: 40%;
   float: left;
   display: block;
+  margin: 10%;
 }
 
 .main-image {
