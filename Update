@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<!--
+1. git add .
+2. git commit -m "message here"
+3. git push -u origin
+-->
 
+<html>
+
+<head>{ pkgs }: {
+  deps = [
+    pkgs.openssh_with_kerberos
+    pkgs.nodePackages.vscode-langservers-extracted
+    pkgs.nodePackages.typescript-language-server  
+  ];
+}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Top bar with all of the clickable buttons-->
+  <div id="titleBar">
+    <div id="tabs">
+      <!-- An unordered list containing all of the buttons -->
+      <ul>
+        <li onclick="changeTab('home ')">Home</li>
+        <li onclick="changeTab('info ')">Info</li>
+        <li onclick="changeTab('gallery ')">Gallery</li>
+        <li onclick="changeTab('contactinfo ')">Contact Info</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Actualy content of the website, should be kept separate from the title bar -->
+  <div id="websiteContent">
+    <!-- The content of each tab should be entirely instide of the following:
+
+    <div class="[tabName] tabContent hidden">
+      [Content here]
+    </div>
+    
+    If the tab should be visible right when the website loads then it should not have the hidden class
+    -->
+    <div class="home tabContent">
+      <img id="main-image" src="view of outside.jpg" alt="">
+      <center><h1 class="titleText">Lunada Condo In Playa Del Carmen, MX</h1></center>
+      <div>
+        <p class="main-text">Enjoy this 2 bedroom, 2.5 bathroom spacious condo with seating in the terrace overlooking a lush garden in the 
+          courtyard. Pour yourself a drink or cup of coffee, kick off your shoes and enjoy the tranquility Lunada has to offer. Ready for a dip in the pool or the jacuzzi, take the elevator or the stairs to the rooftop and enjoy the sunset. Throw some steaks on the bbq and relax. You can also hit the gym down stairs if you're in the mood for a workout. Famous 5th Ave at a 5 min walk, and beach.</p> 
+        <img class="main-image" src="images/gallery/outside views/outside view.jpeg" onclick="openModal(this)"/>
+      </div>
+    </div>
+    
+    <div class="contactinfo tabContent hidden">
+      <center><h1 class="titleText">Contact Info</h1></center>
+      <p>To book with us please call at 480-274-5044 or email us at veronica.alonso@yahoo.com</p>
+      <p> DISCLAIMER: The condo is booked until August of 2024!</p>
+    </div>
+  
+    <div class="gallery tabContent hidden">
+      <center><h1 class="titleText">Gallery</h1></center>
+      <h2>Tabbed Image Gallery</h2>
+      <p>Click on the images below to view the enlarged photo</p>
+      <div class="row">
+        <img src="images/gallery/lobby/lobby1.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/lobby/lobby.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/lobby/officeroom.jpeg" alt="" style="width:100%"     onclick="openModal(this);">
+        <img src="images/gallery/lobby/gym.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/lobby/gym2.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/courtyard/courtyard grill.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/courtyard/courtyard2.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/courtyard/courtyard.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/courtyard/playground.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/courtyard/playground1.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/courtyard/courtyard1.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/courtyard/courtyard3.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/outside views/outside view.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/roof top/chill area.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/roof top/chillarea1.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/roof top/pool.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/roof top/pool2.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/roof top/roof top 1.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/roof top/roof top.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/livingroom and dinning room/living room 1.jpeg" alt="" style="width:100%"        
+            onclick="openModal(this);">
+        <img src="images/gallery/livingroom and dinning room/dinning room.jpeg" alt="" style="width:100%"   
+            onclick="openModal(this);">
+        <img src="images/gallery/livingroom and dinning room/view of living room.jpeg" alt="" style="width:100%" 
+            onclick="openModal(this);">
+        <img src="images/gallery/livingroom and dinning room/view of livingroom2.jpeg" alt="" style="width:100%" 
+            onclick="openModal(this);">
+        <img src="images/gallery/Kitchen pictures/kitchen1.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/Kitchen pictures/kitchenview.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/bathrooms/hallway bathroom.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/bathrooms/bathroom2.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/bedrooms/bedroom1.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/bedrooms/master bedroom1.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/bedrooms/masterbedroom2.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/bedrooms/masterbedroom3.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+        <img src="images/gallery/bedrooms/closet in master bedroom.jpeg" alt="" style="width:100%" onclick="openModal(this);">
+      </div>
+    </div>
+
+    <div class="info tabContent hidden">
+      <center><h1 class="titleText">Info</h1></center>
+      <p>Want to relax? Come to Playa Del Carmen. A beautiful condo with a pool and 7 minutes from the beach and one block away from the famous 5th avenue. Lunada is located on Calle 28 and Avenida 20. It is in a great location surrounded by many great restaurants and stores. There are also a lot of family friendly places and alot of waterparks.</p>
+      <h2>Things to Know about the place</h2> 
+      <p>This condo is equipped with 2 bedrooms including a sofa bed, 3 baths, balcony, a stovetop and a tv.
+      It also has air conditioning and is pet friendly.</p>
+      <h2>Recommendations for Restaurants and Places to go to.</h2>
+      <ul>
+        <!-- Template for all of the info, classes are important but there is no styling for them yet
+          <li>
+            <div class="info_main">
+              <div class="info_text">
+                <div class="info_title">
+                  La Cueva del Chango
+                </div>
+                <div class="info_description">
+                  4.6 stars,
+                  Mexican,
+                  Calle 38 Nte. Mz. 4-Lote 3
+                </div>
+              </div>
+              <div class="info_image">
+                <img src="images/info/la cueva del chango.jpg"/>
+              </div>
+            </div>
+          </li>
+        -->
+        <li>
+          <li>La Cueva del Chango
+        4.6 stars,
+         Mexican,
+        Calle 38 Nte. Mz. 4-Lote 3
+        </li>
+        <li>Chiltepin Marisquillos
+        4.6 stars,
+         Seafood,
+          Calle 34 esq Av 20 Norte Mz 99 Lote 21 Fraccionamiento, Tohoku
+</li>
+        <li>Los Aguachiles
+        4.5 stars,
+         Seafood,
+        Calle 34 Nte Centro
+          
+        <li>La Vagabunda
+          4.4 stars,
+          Mexican,
+          5ta Av entre 24 Y 26, Quinta Avenida
+          
+        <li>Chanolania
+          4.7 stars,
+          Prolongacion Avenida Colosio Ctra. a Merida de Cuota Km 3,              77710 Q.R., Mexico
+          
+        <li>Jungala Aqua Experience
+          4.6 stars,
+          Entrada por estacionamiento de Cirque du Soleil JOYÀ Carretera               Federal, Cancun - Chetumal km 48, 77710 Playa del Carmen, Q.R.,              Mexico
+</li>
+        <h2>Amendities</h2></h2>
+      </ul>
+      <li>Stove</li>
+      <li>Toaster</li>
+      <li>Microwave</li>
+      <li>Wine Glass</li>
+      <li>Dishes and Silverware</li>
+      <li>Frezzer</li>
+      <li>Hot water kettle</li>
+      <li>Microwave</li>
+      <li>Oven</li>
+      <li>Baking Sheet</li>
+      <li>Blender</li>
+      <li>Coffee and Coffee Maker</li>
+      <li>Cooking Basics</li>
+      <li> And More</li>
+    </div>
+  </div>
+       <ul></ul>
+  <!-- Modal stuff, nothing other than scripts should come after these lines -->
+  <div id="modalbackground" class="hidden" onclick="closeModal()"></div>
+  <div id="modal" class="hidden">
+    <img id="modalImage" />
+  </div>
+
+  <!-- Nothing past here: -->
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
