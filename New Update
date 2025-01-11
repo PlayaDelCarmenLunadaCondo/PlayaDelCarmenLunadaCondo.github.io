@@ -8,7 +8,6 @@
 <html>
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
@@ -51,7 +50,7 @@
     <div class="contactinfo tabContent hidden">
       <center><h1 class="titleText">Contact Info</h1></center>
       <p>To book with us please call at 480-274-5044 or email us at veronica.alonso@yahoo.com</p>
-     <!-- <p> DISCLAIMER: The condo is booked until August of 2024!</p> -->
+      <p> DISCLAIMER: The condo is booked until August of 2024!</p>
     </div>
   
     <div class="gallery tabContent hidden">
@@ -86,17 +85,8 @@
             onclick="openModal(this);">
         <img src="images/gallery/livingroom and dinning room/view of livingroom2.jpeg" alt="" style="width:100%" 
             onclick="openModal(this);">
-        <img src="images/gallery/livingroom and dinning room/4F694680-0B21-4E03-83D5-40E5DD3E9170.jpeg" alt="" style="width:100%" onclick="openModal(this);">
-        <img src="images/gallery/livingroom and dinning room/68775FEB-1823-429D-B7BC-62D74FA819C2.jpeg" alt="" style="width:100%" onclick="openModal(this);">
-        <img src="images/gallery/livingroom and dinning room/6AFFE384-BE41-4500-8A77-8C5665434B4C.jpeg" alt="" style="width:100%" onclick="openModal(this);">
-        <img src="images/gallery/livingroom and dinning room/81878093-F344-48ED-A5D0-83E70EBCA67A.jpeg" alt="" style="width:100%" onclick="openModal(this);">
-        <img src="images/gallery/livingroom and dinning room/94268382-D811-46D1-8A66-A446A1CF77F5.jpeg" alt="" style="width:100%" onclick="openModal(this);">
-        <img src="images/gallery/livingroom and dinning room/A107E1BD-C46F-4D95-B385-3E4256584CDD.jpeg" alt="" style="width:100%" onclick="openModal(this);">
-        <img src="images/gallery/livingroom and dinning room/C4FAAF5A-365F-4119-B231-94F68BBCAF34.jpeg" alt="" style="width:100%" onclick="openModal(this);">
-        <img src="images/gallery/livingroom and dinning room/D14A7370-16A7-41F1-80CF-2034A868F16B.jpeg" alt="" style="width:100%" onclick="openModal(this);">
         <img src="images/gallery/Kitchen pictures/kitchen1.jpeg" alt="" style="width:100%" onclick="openModal(this);">
         <img src="images/gallery/Kitchen pictures/kitchenview.jpeg" alt="" style="width:100%" onclick="openModal(this);">
-        <img src="images/gallery/Kitchen pictures/C47D7492-CC72-43DA-9470-BC6E60419F66.jpeg" alt="" style="width:100%" onclick="openModl(this);"> 
         <img src="images/gallery/bathrooms/hallway bathroom.jpeg" alt="" style="width:100%" onclick="openModal(this);">
         <img src="images/gallery/bathrooms/bathroom2.jpeg" alt="" style="width:100%" onclick="openModal(this);">
         <img src="images/gallery/bedrooms/bedroom1.jpeg" alt="" style="width:100%" onclick="openModal(this);">
@@ -104,7 +94,6 @@
         <img src="images/gallery/bedrooms/masterbedroom2.jpeg" alt="" style="width:100%" onclick="openModal(this);">
         <img src="images/gallery/bedrooms/masterbedroom3.jpeg" alt="" style="width:100%" onclick="openModal(this);">
         <img src="images/gallery/bedrooms/closet in master bedroom.jpeg" alt="" style="width:100%" onclick="openModal(this);">
-        <img src="images/gallery/bedrooms/56EABB51-5CDF-4556-858E-801022E46AD5.jpeg" alt="" style="width:100%" onclick="openModal(this);">
       </div>
     </div>
 
@@ -113,7 +102,7 @@
       <p>Want to relax? Come to Playa Del Carmen. A beautiful condo with a pool and 7 minutes from the beach and one block away from the famous 5th avenue. Lunada is located on Calle 28 and Avenida 20. It is in a great location surrounded by many great restaurants and stores. There are also a lot of family friendly places and alot of waterparks.</p>
       <h2>Things to Know about the place</h2> 
       <p>This condo is equipped with 2 bedrooms including a sofa bed, 3 baths, balcony, a stovetop and a tv.
-      It also has air conditioning and is pet friendly.</p>
+      It also has air conditioning.</p>
       <h2>Recommendations for Restaurants and Places to go to.</h2>
       <ul>
         <!-- Template for all of the info, classes are important but there is no styling for them yet
@@ -156,7 +145,7 @@
           Mexican,
           5ta Av entre 24 Y 26, Quinta Avenida
           
-        <li>Chanolania
+        <li>Chanolania (water park)
           4.7 stars,
           Prolongacion Avenida Colosio Ctra. a Merida de Cuota Km 3,              77710 Q.R., Mexico
           
@@ -171,7 +160,7 @@
       <li>Microwave</li>
       <li>Wine Glass</li>
       <li>Dishes and Silverware</li>
-      <li>Freezer</li>
+      <li>Frezzer</li>
       <li>Hot water kettle</li>
       <li>Microwave</li>
       <li>Oven</li>
